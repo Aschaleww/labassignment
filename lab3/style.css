@@ -22,9 +22,7 @@ div.com ul li{
     float: right;
     display: inline;
     padding: 10px;
-    top: 0;
-   
-  
+    top: 0; 
 }
 h2{
     background-color: rgb(5, 68, 104);
@@ -35,18 +33,11 @@ h2{
     padding: 20px;
     text-align: center;
 }
-
-
-
-
 div.login{
     margin-top: 240px;
    margin-left: 150px;
    position: fixed;
- 
-
 }
-
 div.login img{
     background-color: antiquewhite;
     width: 300px;
@@ -95,9 +86,6 @@ div.login input[type=submit ]{
     footer p{
    
         margin-left: 80%;
-       
-       
-       
     }
     div.login fieldset {
         border: 1px solid #ccc;
