@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+  width: 90px;
+}
+div.com img{
+    
+  margin-left: 10px;
+ top: 0;
+  position: fixed;
+}
+div.com p{
+   top: 2px;
+    margin-left: 110px;
+    position: fixed;
+    font-size: 20px;
+
+}
+div.com ul li{
+    float: right;
+    display: inline;
+    padding: 10px;
+    top: 0;
+   
+  
+}
+h2{
+    background-color: rgb(5, 68, 104);
+  top: 67px;
+    position:fixed;
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+div.login{
+    margin-top: 240px;
+   margin-left: 150px;
+   position: fixed;
+ 
+
+}
+
+div.login img{
+    background-color: antiquewhite;
+    width: 40%;
+    height: 10%;
+}
+div.login input[type="text"], input[type="password"]{
+    
+  
+    background: transparent;
+ 
+    height: 40px;
+    color: white;
+    width: 50%;
+    margin-top: 5px;
+}
+div.login input[type=submit ]{
+    background-color: bisque;
+    width: 40%;
+   margin-top: 20px;
+   border: none;
+  
+}
+.right{
+    float: right;
+    margin-top: 20%;
+    margin-right: 7px;
+    text-justify: auto;
+
+}
+.right input[type ="button"]{
+    margin-top: 20px;
+}
+.vertical-line {
+  
+      
+        height: 400px;
+        margin-left: 40%;
+        margin-top: 15%;
+        position: fixed;
+        border: 0.1px solid;
+}
+
+    footer p{
+   
+        margin-left: 80%;
+       
+       
+       
+    }
