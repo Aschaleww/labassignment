@@ -60,13 +60,14 @@ div.login input[type="text"], input[type="password"]{
     height: 40px;
     color: white;
     width: 50%;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 div.login input[type=submit ]{
-    background-color: bisque;
-    width: 40%;
-   margin-top: 20px;
-   border: none;
+    background-color:black;
+    width: 35%;
+   margin-top: 15px;
+  height: 30px;
+   color: white;
   
 }
 .right{
@@ -78,6 +79,8 @@ div.login input[type=submit ]{
 }
 .right input[type ="button"]{
     margin-top: 20px;
+    background-color: black;
+    color: white;
 }
 .vertical-line {
   
@@ -86,7 +89,7 @@ div.login input[type=submit ]{
         margin-left: 40%;
         margin-top: 15%;
         position: fixed;
-        border: 0.1px solid;
+        border: 1px solid #ccc;
 }
 
     footer p{
@@ -96,3 +99,15 @@ div.login input[type=submit ]{
        
        
     }
+    div.login fieldset {
+        border: 1px solid #ccc;
+        padding: 0px;
+       margin-left: 0;
+       border-bottom: none;
+       border-left: none;
+       border-right: none;
+      width: 260px;
+        font-size: 10px;
+        color: #333;
+        text-align: center;
+      }
