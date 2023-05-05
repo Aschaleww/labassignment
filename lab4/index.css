@@ -33,26 +33,37 @@ font-size: 20px;
 }
 
 .bt{
-    margin-left: 645px;
+    margin-left: 450px;
     margin-top: 20px;
 }
-.bt button[type="submit"]{
-    background-color: white;
-    border: blue solid 3px;
-    color: blue;
-}
-.bt button[type="cancel"]{
-    background-color: white;
-    border: 1px solid;
-    color: brown;
-}
-.bt button[type="add"]{
-    background-color: white;
-    border: blue solid 3px;
-    color: blue;
-}
+
 footer{
     float: right;
     margin-top: 10%;
     margin-right: 50px;
 }
+.button-container {
+    display: flex;
+    
+  }
+  
+  .button-container button {
+   
+ 
+    background-color: #0b1781;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 40px;
+   
+    
+
+  }
+  
+  .button-container button input[type="button1"] {
+  margin-left: 60%;
+  }
+  
+  .button-container  button:hover{
+    background-color: #999;
+    cursor: pointer;
+  }
