@@ -1,0 +1,41 @@
+/* 
+1.//Global EC:Creation
+//LE{outer:null, b:undifined, a:undifined,c:function()}
+
+//Global EC:Creation->Execution
+// LE{outer:null, a:5,b=10,c:function()}
+
+//c Function EC:Creation->Execution
+//LE{ outer:Global, Argument=a=8,b=9,c=10, length=3, f:function() };
+
+//F Function EC: Creation ->Execution
+//LE{outer:C, Argument={1=8, b=8,c=10,length=3};}
+
+Output:
+Undifined
+8
+8
+9
+10
+1
+
+
+2.//Global EC: Creation
+//LE{Outer:null,x:Undifined myFunction:function()}
+//MyFunction Function EC:Creation ->Execution
+//LE{Outer:null,x:9 myFunction:function()}
+Output
+81
+25
+
+
+3.//Global EC: Creation->Execution
+//LE{Outer:null,foo:1,bar:function()}
+
+//bar Function EC: Creation ->Execution
+//LE{outer:null,foo=10, argument={lenght=0}}
+
+Output
+10
+
+*/
