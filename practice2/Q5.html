@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+Based on the code above,
+1.	What's the LE of global EC after creation phase finished before execution phase starts?
+Global CE: LE {outer:null, a:undifined,outer:fun()}, TDZ:b
+
+2.	What's the LE of global EC after execution phase finished? 
+Global CE: LE {outer:null, a=2, b=3,outer:fun()}
+
+3.	What's the LE of function outer EC after creation phase finished before execution phase starts?
+outer F EC LE{outer:Global, d:undifined,argument:length=0, }TDZ:c;
+
+4.	What's the LE of function outer EC after execution phase finished? 
+
+outer F EC LE{outer:Global, d:7,c=5,inner:fun(),argument:length=0, }
+5.	What's the LE of function inner EC after creation phase finished before execution phase starts?
+inner f EC, LE{outer:outer, argumet:length=0,} TDZ:c
+
+6. What's the LE of function inner EC after execution phase finished? 
+
+inner f EC, LE{outer:outer,c=9 argumet:length=0,} 
+
+
+
+
+
+
+    -->
+</body>
+</html>
