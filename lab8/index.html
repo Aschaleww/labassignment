@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+    <h2>See the result on console</h2>
     <script>
         const student = {
             firstName: '',
@@ -43,7 +45,7 @@
         ];
         const sum = student1.reduce((sum, student) => sum + student.computeAverageGrade(), 0);
         const averageGrade = sum / student1.length;
-        console.log(`The average grade for all students is:` +averageGrade);
+        console.log(`The average grade for all students using Object literal is:` +averageGrade);
 
 
 
@@ -89,7 +91,7 @@
         // Compute the average grade for all students in the array
         const totalSum = students.reduce((sum, student) => sum + student.computeAverageGrade(), 0);
         const average = totalSum / students.length;
-        console.log(`The average grade for all students is:`+average);
+        console.log(`The average grade for all students using constructor function is:`+average);
 
 
 
@@ -97,6 +99,18 @@
 
 
     </script>
+
+<script>
+    // Add the sort() method to the Array constructor
+    function sortArray(arr) {
+return arr.sort((a, b) => a - b);
+}
+// Test the sort() method
+const numbers = [5, 2, 8, 1, 4];
+const sort = sortArray(numbers);
+console.log("The sorting result is :" +sort);
+</script>
+
 </body>
 
 </html>
