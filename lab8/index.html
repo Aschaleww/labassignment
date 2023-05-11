@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const student = {
+            firstName: '',
+            lastName: '',
+            grades: [],
+            inputNewGrade(newGrade) {
+                this.grades.push(newGrade);
+            },
+            computeAverageGrade() {
+                const sum = this.grades.reduce((total, grade) => total + grade, 0);
+                return sum / this.grades.length;
+            }
+        };
+
+        // Create an array of multiple students using Object.create()
+        const student1 = [
+            Object.create(student, {
+                firstName: { value: 'John' },
+                lastName: { value: 'Doe' },
+                grades: { value: [85, 92, 78] }
+            }),
+            Object.create(student, {
+                firstName: { value: 'Jane' },
+                lastName: { value: 'Doe' },
+                grades: { value: [90, 87, 93, 91] }
+            }),
+            Object.create(student, {
+                firstName: { value: 'Bob' },
+                lastName: { value: 'Smith' },
+                grades: { value: [80, 85, 76, 89, 92] }
+            })
+        ];
+        const sum = student1.reduce((sum, student) => sum + student.computeAverageGrade(), 0);
+        const averageGrade = sum / student1.length;
+        console.log(`The average grade for all students is:` +averageGrade);
+
+
+
+        //using constructor
+        function Student(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.grades = [];
+
+            this.inputNewGrade = function (newGrade) {
+                this.grades.push(newGrade);
+            };
+
+            this.computeAverageGrade = function () {
+                const sum = this.grades.reduce((total, grade) => total + grade, 0);
+                return sum / this.grades.length;
+            };
+        }
+
+        // Create an array of multiple students using the Student constructor function
+        const students = [
+            new Student('yan', 'Doe'),
+            new Student('frth', 'Doe'),
+            new Student('jou', 'Smith')
+        ];
+
+        // Add grades for each student
+        students[0].inputNewGrade(85);
+        students[0].inputNewGrade(92);
+        students[0].inputNewGrade(78);
+
+        students[1].inputNewGrade(90);
+        students[1].inputNewGrade(87);
+        students[1].inputNewGrade(93);
+        students[1].inputNewGrade(91);
+
+        students[2].inputNewGrade(80);
+        students[2].inputNewGrade(85);
+        students[2].inputNewGrade(76);
+        students[2].inputNewGrade(89);
+        students[2].inputNewGrade(92);
+
+        // Compute the average grade for all students in the array
+        const totalSum = students.reduce((sum, student) => sum + student.computeAverageGrade(), 0);
+        const average = totalSum / students.length;
+        console.log(`The average grade for all students is:`+average);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
