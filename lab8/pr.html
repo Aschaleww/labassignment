@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = [
+ { name: 'Quincy', grades: [99, 88], courses:['cs301', 'cs303']},
+ { name: 'Jason', grades: [29, 38], courses:['cs201', 'cs203']},
+ { name: 'Alexis', grades: [79, 78], courses:['cs105', 'cs211'] },
+ { name: 'Sam', grades: [91, 82], courses:['cs445', 'cs303'] },
+ { name: 'Katie', grades: [66, 77], courses:['cs303', 'cs477'] }
+];
+const cs = students.filter(x=>x.courses.includes('cs303'));
+const av = cs.reduce((average, student)=>{
+    const sumav =student.grades.reduce((sum, grade,i,arr)=>sum+grade,0)/student.grades.length;
+    average[student.name]=sumav;
+    return average;
+}, {});
+console.log(av);
+    </script>
+</body>
+</html>
