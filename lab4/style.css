@@ -1,0 +1,22 @@
+body{
+    
+    padding: 0;
+    margin: 0;
+  
+}
+.navbar navbar-dark bg-primary{
+height: 90px;
+width: 0px;
+}
+.for{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 45px;
+    width: 60%;
+}
+
+footer{
+    float: right;
+    margin-top: 10%;
+    margin-right: 50px;
+}

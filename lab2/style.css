@@ -1,0 +1,12 @@
+body{
+    background-color: bisque;
+}
+h1{
+font-size: large;
+color: brown;
+
+
+}
+.img{
+    display: flex;
+}

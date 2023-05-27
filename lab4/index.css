@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+    
+}
+
+
+.new{
+    background-color: rgb(5, 68, 104);
+  
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 15px;
+}
+.new h2{
+margin-left: 15px;
+font-size: 20px;
+    
+}
+.new div{
+   margin-right: 15px;
+   margin-top: 10px;
+
+}
+.edit{
+    margin-left: 130px;
+    margin-top: 50px;
+    padding: 1px;
+}
+.edit col-md-4{
+    padding: 10px;
+}
+
+.bt{
+    margin-left: 645px;
+    margin-top: 20px;
+}
+.bt button[type="submit"]{
+    background-color: white;
+    border: blue solid 3px;
+    color: blue;
+}
+.bt button[type="cancel"]{
+    background-color: white;
+    border: 1px solid;
+    color: brown;
+}
+.bt button[type="add"]{
+    background-color: white;
+    border: blue solid 3px;
+    color: blue;
+}
+footer{
+    float: right;
+    margin-top: 10%;
+    margin-right: 50px;
+}

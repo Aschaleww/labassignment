@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class Employee{
+    #fullname;
+    static #counter=0;
+    constructor( fullname, salary,hiredate){
+        this.#fullname=fullname;
+        this.salary=salary;
+        this.hiredate=hiredate;
+       
+    }
+    static incounter(){
+        return counter += 1;
+    }
+    static getcounter(){
+        return Employee.#counter;
+    }
+    get name(){
+        return this.#fullname;
+    }
+    set name(x){
+        return this.#fullname =x;
+    }
+  calcsalary(){
+    return this.salary;
+  }
+  
+}
+class manager extends Employee{
+
+  constructor( fullname,salary,hiredate,bonus){
+    super(fullname,salary,hiredate);
+    this.Bonus=bonus;
+  }
+  calcsalary(){
+   return  super.calcsalary() * this.Bonus + this.salary;
+  }
+}
+
+let emp1= new Employee("john", 3000, new Date(10,05,2000));
+console.log(emp1);
+
+let mgr =new manager("john",2000, new Date(10,12,2023) , 2300);
+console.log(mgr);
+//Employee.prototype.getsalary =function(){}
+//Employee.anotherstsicmethod=function(){}
+//emp1.gethiredate = function(){
+  //  return this.hiredate;
+//}
+console.log(typeof(Employee));
+console.log(typeof(manager));
+console.log(typeof(Employee.prototype));
+console.log(typeof(emp1));
+console.log(manager instanceof manager);
+console.log(manager instanceof Employee);
+console.log(mgr instanceof Employee);
+console.log(emp1 instanceof manager);
+    </script>
+</body>
+</html>
+
